@@ -1,4 +1,4 @@
-class Vector {
+class Vector2d {
     constructor(x=0, y=0) {
         this.x = x
         this.y = y
@@ -20,7 +20,3 @@ class Vector {
         else              return this.multiply(1/scalar)
     }
 }
-
-/* -------------------------------------------------------------------------------- */
-
-const vec = new Vector()
