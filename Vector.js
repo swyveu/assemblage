@@ -32,6 +32,14 @@ class Vector {
         return Math.sqrt(this.dot(this))
     }
 
+    angle() {
+        return Math.atan2(this.y, this.x)
+    }
+
+    angleTo(vector) {
+        return Math.acos(this.dot(vector) / (this.length() * vector.length()));
+    }
+
     normalize() {
         return this.divide(this.length())
     }
@@ -39,5 +47,6 @@ class Vector {
     equals(vector) {
         return (this.x === vector.x && this.y === vector.y)
     }
+
 }
 
