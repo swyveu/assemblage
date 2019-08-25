@@ -48,5 +48,11 @@ class Vector {
         return (this.x === vector.x && this.y === vector.y)
     }
 
+    /* ------------------------------------------ */
+
+    static fromAngle(angle, length = 1) {
+        return new Vector(Math.cos(angle) * length, Math.sin(angle) * length)
+    }
+
 }
 
